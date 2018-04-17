@@ -1,19 +1,20 @@
 // Third-party dependencies
 import React from "react";
-import { Grid, Row, Col } from "react-bootstrap";
 
 // Own actions/constants/components
-import PostsContainer from "./PostsContainer";
+import JumbotronComp from "../components/hero/Jumbotron";
+import Hero from "../components/hero/Hero";
 
 function App() {
   return (
-    <Grid>
-      <Row>
-        <Col md={12}>
-          <PostsContainer />
-        </Col>
-      </Row>
-    </Grid>
+    <div className="home-layout">
+      <section>
+        <JumbotronComp />
+      </section>
+      <section>
+        <Hero name="sectionfirst" title="curriculum" />
+      </section>
+    </div>
   );
 }
 
